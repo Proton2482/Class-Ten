@@ -1,0 +1,173 @@
+*{
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.box-one{
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+    border-radius: 0 0 100px 100px;
+
+}
+.box-two{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 100px 100px 0 0;
+}
+.div-one{
+    height: 200px;
+    width: 300px;
+    background-color: gold;
+    animation-name: bitm;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.div-two{
+    height: 300px;
+    width: 300px;
+    background-color: coral;
+
+}
+.div-two:hover{
+    animation-name: divtwo;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes divtwo {
+    0%{
+        background-color: coral;
+        width: 300px;
+    }
+    50%{
+        background-color: green;
+        width: 600px;
+    }
+    100%{
+        background-color: coral;
+        width: 900px;
+    }
+
+}
+@keyframes bitm {
+    from{
+        background-color: gold;
+    }
+    to{
+        background-color: red;
+    }
+
+}
+.div-three{
+    height: 400px;
+    width: 600px;
+    /*background-color: tomato;*/
+    animation-name: imageslider;
+    animation-duration: 15s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+.div-three:hover{
+    transform: scale(1.5);
+}
+@keyframes imageslider {
+    0%{
+        background-image: url("img/bride-g6ad812f0b_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    25%{
+        background-image: url("img/fashion-gc6b1fd889_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background-image: url("img/girl-g6993f9927_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        background-image: url("img/woman-g2c5e71a78_1920.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background-image: url("img/sh.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+.row:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.div-four{
+    height: 300px;
+    width: 300px;
+    /*background-color: peru;*/
+    background-image: url("img/fashion-gc6b1fd889_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 2s;
+}
+.div-four:hover{
+    /*transform: scale(1.5);*/
+    transform: scale(.5, 2);
+}
+.div-five{
+    height: 200px;
+    width: 200px;
+    background-color: darkmagenta;
+    transition: 2s;
+}
+.div-five:hover{
+    transform: rotate(90deg);
+
+}
+.div-six{
+    height: 200px;
+    width: 200px;
+    background-color: midnightblue;
+    transition: 1s;
+}
+.div-six:hover{
+    transform: translate(20px, 20px);
+    /*transform: translate(-40px, -40px);*/
+}
+.div-seven{
+    height: 300px;
+    width: 300px;
+    background-color: darkgreen;
+    transition: 1s;
+
+
+}
+.div-seven:hover{
+    transform: skew(20deg);
+}
+.div-eight{
+    height: 300px;
+    width: 300px;
+    background-color: darkcyan;
+    transform: skewY(45deg);
+    margin-top: 140px;
+}
+.div-nine{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    transform: skewY(-45deg);
+    margin-top: 140px;
+}
